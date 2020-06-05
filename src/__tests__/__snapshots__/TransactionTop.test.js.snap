@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transactions Top renders correctly 1`] = `
+<Fragment>
+  <div
+    className="top-transaction"
+  >
+    <p
+      id="top"
+    >
+      TOP
+    </p>
+    <p>
+       
+      Transaction no. 5481726983
+       
+    </p>
+    <div
+      className="top-transaction__value"
+    >
+      <p>
+         
+        185.00
+         EUR 
+      </p>
+      <p>
+        814.00
+         PLN
+      </p>
+       
+    </div>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Exchange Rate renders correctly 1`] = `
+<Fragment>
+  <div
+    className="exchange-rate"
+  >
+    <p>
+      1 EUR = 
+    </p>
+    <input
+      min="0"
+      name="rate"
+      onChange={[Function]}
+      step="0.01"
+      type="number"
+      value={4.4}
+    />
+    <p>
+      PLN 
+    </p>
+  </div>
+</Fragment>
+`;

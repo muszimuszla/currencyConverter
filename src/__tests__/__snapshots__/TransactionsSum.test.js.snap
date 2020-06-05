@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transactions Sum renders correctly 1`] = `
+<Fragment>
+  <div
+    className="sum"
+  >
+    <p
+      id="EUR"
+    >
+      610.95
+      €
+    </p>
+    <p
+      id="PLN"
+    >
+      2688.18
+      zł
+    </p>
+  </div>
+</Fragment>
+`;

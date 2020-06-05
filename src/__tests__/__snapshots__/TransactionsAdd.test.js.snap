@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Transactions Add renders correctly 1`] = `
+<Fragment>
+  <form
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="add-form"
+    >
+      <input
+        id="title"
+        name="title"
+        onChange={[Function]}
+        placeholder="TRANSACTION TITLE"
+        required={true}
+        type="text"
+      />
+      <input
+        id="EUR"
+        min="0"
+        name="euro"
+        onChange={[Function]}
+        placeholder="EUR"
+        required={true}
+        step="0.01"
+        type="number"
+      />
+      <button
+        type="submit"
+      >
+        <p>
+          ADD
+        </p>
+      </button>
+    </div>
+  </form>
+</Fragment>
+`;

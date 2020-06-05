@@ -1,0 +1,207 @@
+@import "variables";
+@import "interaction";
+
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  overflow: hidden;
+  font-family: $main-font;
+  background-color: $bg-color;
+  color: $main-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("../assets/leaf1.png"), url("../assets/leaf2.png"),
+    url("../assets/leaf4.png");
+  background-repeat: no-repeat;
+  background-size: 350px, 300px, 200px;
+  background-position: -45px -80px, 105% 120%, 70% -80px;
+}
+
+.main-container {
+  height: $height;
+  width: $width;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  &__left {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__right {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+.exchange-rate {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  margin-bottom: 10%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: $accent-color;
+  font-weight: 900;
+  font-size: 1.4rem;
+  border-radius: $border-radius;
+  box-shadow: 5px 5px 10px $shadow, -5px -5px 10px $highlight;
+
+  input {
+    height: 2.8rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    width: 100px;
+    margin: 16px;
+  }
+}
+
+.top-transaction {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 25%;
+  margin-bottom: 10%;
+  border-radius: $border-radius;
+  box-shadow: 5px 5px 10px $shadow, -5px -5px 10px $highlight;
+
+  background-image: url("../assets/leaf3.png");
+  background-repeat: no-repeat;
+  background-size: 100px;
+  background-position: 95% -40px;
+
+  &__value {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  p {
+    margin: 6px;
+  }
+  #top {
+    font-family: $accent-font;
+    color: $accent-color;
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+}
+
+.transactions {
+  width: 90%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-radius: $border-radius;
+  box-shadow: 5px 5px 10px $shadow, -5px -5px 10px $highlight;
+  background-color: $bg-color;
+  #form {
+    width: 87%;
+    min-height: 10%;
+    margin: 16px;
+    border-bottom: solid;
+    border-color: $accent-color;
+    border-width: 3px;
+    .add-form {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      #title {
+        width: 50%;
+        margin-right: 8%;
+      }
+      #EUR {
+        width: 15%;
+        margin-right: 5%;
+      }
+      button {
+        width: 10%;
+        height: 1.8rem;
+        margin-left: 5%;
+      }
+    }
+  }
+  &__items {
+    width: 90%;
+    min-height: 60%;
+    overflow: scroll;
+    scrollbar-width: thin;
+    overflow-x: hidden;
+    margin-bottom: 16px;
+  }
+  &__item {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    #title {
+      width: 50%;
+      margin-right: 5%;
+    }
+    #EUR,
+    #PLN {
+      width: 10%;
+      margin-right: 5%;
+      text-align: right;
+    }
+    button {
+      margin-left: 5%;
+    }
+  }
+
+  .sum {
+    min-height: 10%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    color: $accent-color;
+    border-top: solid;
+    border-color: $accent-color;
+    border-width: 3px;
+    padding-right: 12%;
+
+    #EUR,
+    #PLN {
+      width: 10%;
+      margin-right: 7%;
+      text-align: right;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: $border-radius;
+  background: $shadow;
+  width: 3px;
+}

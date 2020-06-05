@@ -1,0 +1,54 @@
+button {
+  outline: none;
+  border: none;
+  color: $bg-color;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $accent-color;
+  border-radius: $border-radius;
+  box-shadow: 4px 4px 8px $shadow, -4px -4px 8px $highlight;
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 5px 5px 8px $accent-shadow,
+      inset -5px -5px 8px $accent-highlight;
+  }
+}
+
+.delete {
+  color: $delete-color;
+  background: none;
+  &:hover {
+    cursor: pointer;
+    box-shadow: inset 2px 2px 4px $shadow, inset -2px -2px 4px $highlight;
+  }
+}
+
+input {
+  height: 1.8rem;
+  margin: 10px;
+  outline: none;
+  border: none;
+  margin: 0px;
+  border-radius: $input-border-radius;
+  text-align: center;
+  color: $accent-color;
+  font-size: 1rem;
+  font-family: $accent-font;
+  background: none;
+  box-shadow: inset 5px 5px 5px $shadow, inset -5px -5px 5px $highlight;
+  &::placeholder {
+    color: $input-color;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
