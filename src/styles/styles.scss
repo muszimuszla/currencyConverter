@@ -22,6 +22,14 @@ html,
   background-position: -45px -80px, 105% 120%, 70% -80px;
 }
 
+.mobile {
+  display: none;
+
+  @media screen and (max-width: 1000px) {
+    display: unset;
+  }
+}
+
 .main-container {
   height: $height;
   width: $width;
@@ -46,6 +54,10 @@ html,
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+  }
+
+  @media screen and (max-width: 1000px) {
+    display: none;
   }
 }
 

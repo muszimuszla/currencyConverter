@@ -102,6 +102,16 @@ html,
   background-position: -45px -80px, 105% 120%, 70% -80px;
 }
 
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile {
+    display: unset;
+  }
+}
+
 .main-container {
   height: 80%;
   width: 95%;
@@ -153,6 +163,12 @@ html,
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px) {
+  .main-container {
+    display: none;
+  }
 }
 
 .exchange-rate {

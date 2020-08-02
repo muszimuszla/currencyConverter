@@ -2,9 +2,11 @@
   "name": "currency-converter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://muszimuszla.github.io/currency-converter",
+  "homepage": "https://muszimuszla.github.io/currencyConverter",
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
